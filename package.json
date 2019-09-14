@@ -1,0 +1,23 @@
+{
+  "name": "claudia-test",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "transpile": "babel --presets env src --out-dir bin",
+    "create": "npm run transpile && claudia create --region us-west-1 --api-module bin/api",
+    "update": "npm run transpile && claudia update"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "claudia": "^5.8.0"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^4.1.2"
+  }
+}

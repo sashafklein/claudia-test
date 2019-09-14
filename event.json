@@ -1,0 +1,9 @@
+{
+  "requestContext": {
+    "resourcePath": "/echo",
+    "httpMethod": "GET"
+  },
+  "queryStringParameters": {
+    "name": "mike"
+  }
+}
