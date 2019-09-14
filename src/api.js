@@ -1,12 +1,9 @@
 import ApiBuilder from "claudia-api-builder";
-import { close } from "./pr";
+import pr from "./pr";
 
 const api = new ApiBuilder();
 
-// PRs
-api.post("/pr/close", close);
-
-// Test
+api.post("/pr", pr);
 api.get("/hello", () => "Hello");
 
-module.exports = api;
+export default api;
